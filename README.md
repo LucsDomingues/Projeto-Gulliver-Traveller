@@ -1,2 +1,2 @@
-# Projeto-Gulliver-Traveller
- Repositório exclusivo para o Projeto Gulliver Traveller
+# Projeto-Gulliver-Traveller ✈️
+ * Repositório exclusivo para o Projeto Gulliver Traveller
