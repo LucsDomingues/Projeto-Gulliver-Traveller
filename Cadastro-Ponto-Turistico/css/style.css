@@ -100,8 +100,11 @@ textarea{
 .campos .em__linha label,.campos .em__linha input{
     width: 30%;
 }
+.cep__label{
+    display: flex;
+}
 #cep{
-    width: 26.5%;
+    width: 30%;
     margin-right: 5px;
 }
 .link:hover{

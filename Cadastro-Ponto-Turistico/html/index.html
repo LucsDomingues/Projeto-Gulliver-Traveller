@@ -47,7 +47,8 @@
                         <a href="#descricao">*</a>
                     </label>
 
-                    <textarea id="descricao" required placeholder="Descreva o Ponto Turístico para exibição na página"></textarea>
+                    <textarea id="descricao" required
+                        placeholder="Descreva o Ponto Turístico para exibição na página"></textarea>
                 </div>
             </div>
 
@@ -95,10 +96,11 @@
             <h3>Local</h3>
             <div class="campos">
                 <div>
-                    <label for="cep">CEP
-                        <a href="#cep">*</a>
-                    </label>
-
+                    <div class="cep__label">
+                        <label for="cep">CEP
+                            <a href="#cep">*</a>
+                        </label>
+                    </div>
                     <input type="text" id="cep" required placeholder="00000-000" minlength="8" maxlength="8">
 
                     <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="link"
@@ -218,10 +220,10 @@
 
             <div class="funcionamento">
                 <div class="titulos">
-                    <p>Dias e horários</p>
-                    <p>Valores</p>
+                    <p>Dias e Horários</p>
+                    <p>Valor do Ingresso</p>
                 </div>
-                
+
                 <div class="container__funcionamento">
                     <div class="em__linha dh">
                         <div class="em__coluna">
@@ -269,26 +271,26 @@
                             <p class="subtitulos">
                                 Início
                             </p>
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
+                            <input type="time" id="hora__inicio__dom">
+                            <input type="time" id="hora__inicio__seg">
+                            <input type="time" id="hora__inicio__ter">
+                            <input type="time" id="hora__inicio__qua">
+                            <input type="time" id="hora__inicio__qui">
+                            <input type="time" id="hora__inicio__sexta">
+                            <input type="time" id="hora__inicio__sab">
                         </div>
 
                         <div class="em__coluna">
                             <p class="subtitulos">
                                 Fim
                             </p>
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
-                            <input type="time">
+                            <input type="time" id="hora__fim__dom">
+                            <input type="time" id="hora__fim__seg">
+                            <input type="time" id="hora__fim__ter">
+                            <input type="time" id="hora__fim__qua">
+                            <input type="time" id="hora__fim__qui">
+                            <input type="time" id="hora__fim_sexta">
+                            <input type="time" id="hora__fim__sab">
                         </div>
                     </div>
 
@@ -297,39 +299,39 @@
                             <p class="subtitulos">
                                 Criança
                             </p>
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
+                            <input type="text" id="valor__crianca__dom" value="| R$ ">
+                            <input type="text" id="valor__crianca__seg" value="| R$ ">
+                            <input type="text" id="valor__crianca__ter" value="| R$ ">
+                            <input type="text" id="valor__crianca__qua" value="| R$ ">
+                            <input type="text" id="valor__crianca__qui" value="| R$ ">
+                            <input type="text" id="valor__crianca__sexta" value="| R$ ">
+                            <input type="text" id="valor__crianca__sab" value="| R$ ">
                         </div>
 
                         <div class="em__coluna">
                             <p class="subtitulos">
                                 Adulto
                             </p>
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
-                            <input type="text" value="| R$ ">
+                            <input type="text" id="valor__adulto__dom" value="| R$ ">
+                            <input type="text" id="valor__adulto__seg" value="| R$ ">
+                            <input type="text" id="valor__adulto__ter" value="| R$ ">
+                            <input type="text" id="valor__adulto__qua" value="| R$ ">
+                            <input type="text" id="valor__adulto__qui" value="| R$ ">
+                            <input type="text" id="valor__adulto__sexta" value="| R$ ">
+                            <input type="text" id="valor__adulto__sab" value="| R$ ">
                         </div>
 
                         <div class="em__coluna">
                             <p class="subtitulos">
                                 Idoso
                             </p>
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
-                            <input type="text" value="|R$">
+                            <input type="text" id="valor__idoso__dom" value="|R$">
+                            <input type="text" id="valor__idoso__seg" value="|R$">
+                            <input type="text" id="valor__idoso__ter" value="|R$">
+                            <input type="text" id="valor__idoso__qua" value="|R$">
+                            <input type="text" id="valor__idoso__qui" value="|R$">
+                            <input type="text" id="valor__idoso__sexta" value="|R$">
+                            <input type="text" id="valor__idoso__sab" value="|R$">
                         </div>
                     </div>
                 </div>
@@ -399,18 +401,19 @@
                         <label for="estacionamento__nao">Não</label>
                     </div>
 
-                    
+
                 </div>
 
                 <div class="b">
                     <div>
-                        <label for="numero__pessoas" class="perguntas">O local suporta atender até quantas pessoas no mesmo horário?
+                        <label for="numero__pessoas" class="perguntas">O local suporta atender até quantas pessoas no
+                            mesmo horário?
                             <a href="#numero__pessoas">*</a>
                         </label>
 
                         <input type="number" name="numero__pessoas" id="numero__pessoas" required min="0">
                     </div>
-                    
+
                     <div>
                         <label for="" class="perguntas">Formas de pagamento disponiveis
                             <a href="#debito">*</a>
