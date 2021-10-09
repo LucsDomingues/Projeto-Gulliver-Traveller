@@ -11,6 +11,8 @@ header{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 html{
     font-family: 'Asap', sans-serif;
@@ -59,7 +61,7 @@ h2{
     text-transform:uppercase;
     margin: 5px;
 }
-a{
+strong, .link{
     text-decoration: none;
     color: rgb(184, 38, 38);
     font-size: 14px;
@@ -83,6 +85,12 @@ a{
 input{
     font-family: 'Asap', sans-serif;
     margin-bottom: 15px;
+    outline: none;
+}
+input:focus, textarea:focus{
+    border: 0;
+    outline: 1px solid #2b92d6;
+    box-shadow: 1px 1px 5px 1px #000;
 }
 textarea{
     font-family: 'Asap', sans-serif;
@@ -97,18 +105,11 @@ textarea{
     flex-direction: row;
     justify-content: space-between;
 }
-.campos .em__linha label,.campos .em__linha input{
+.campos .em__linha label,.campos .em__linha input, #cep{
     width: 30%;
 }
-.cep__label{
-    display: flex;
-}
-#cep{
-    width: 30%;
-    margin-right: 5px;
-}
-.link:hover{
-    color: rgba(184, 38, 38, 0.705);
+.campos label{
+    display: block;
 }
 .local__tit{
     margin: 10px 0;
@@ -174,7 +175,9 @@ input[type='file'] {
     color: #555;
     display: flex;
     flex-direction: row;
-    
+}
+.container__funcionamento input[type="text"]{
+    width: 85%;
 }
 .dh, .valores, .a, .b{
     width: 50%;
