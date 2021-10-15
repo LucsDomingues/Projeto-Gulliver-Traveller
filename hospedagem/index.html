@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <title>Traveller - Hospedagem</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <section>
+                <h1>TRAVELLER</h1>
+            </section>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Ajuda</a></li>
+                    <li><a href="#"><i class="fas fa-suitcase-rolling"></i> Minhas Viagens</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Entrar</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+            </nav>
+        </div>
+    
+        <nav>
+            <ul class="sessoes">
+                <li class="box">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i></a>
+                    <a href="#">Como chegar</a>
+                </li>
+
+                <li class="box">
+                    <a  href="#"><i class="fas fa-info-circle"></i></a>
+                    <a href="#">Dicas</a>
+                </li>
+
+                <li class="box selecionado">
+                    <a style="color: #128172;" href="index.htmnext"><i class="fas fa-hotel"></i></a>
+                    <a style="color: #128172;" href="#">Hospedagem</a>
+                </li>
+
+                <li class="box">
+                    <a  href="#"><i class="fas fa-car"></i></a>
+                    <a href="#">Carro</a>
+                </li>
+
+                <li class="box">
+                    <a  href="#"><i class="fas fa-landmark"></i></a>
+                    <a href="#">História</a>
+                </li>
+                
+                <li class="box">
+                    <a  href="#"><i class="fas fa-theater-masks"></i></a>
+                    <a href="#">Cultura</a>
+                </li>
+
+                <li class="box">
+                    <a  href="#"><i class="fas fa-tree"></i></a>
+                    <a href="#">Parques</a>
+                </li>
+
+                <li class="box">
+                    <a  href="#"><i class="fas fa-utensils"></i></a>
+                    <a href="#">Gastronomia</a>
+                </li>
+
+                <li class="box">
+                    <a href="#"><i class="fas fa-glass-cheers"></i></a>
+                    <a href="#">Vida noturna</a>
+                </li>
+
+                <li class="box">
+                    <a href="#"><i class="fas fa-guitar"></i></a>
+                    <a href="#">Entretenimento</a>
+                </li>
+            </ul>
+            <div class="pontinhos">
+                <div class="ponto"></div>
+                <div class="ponto"></div>
+                <div class="ponto"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container__banner">
+            <div class="fundo">
+                <article class="container">
+                    <section>
+                        <h2>Hospedagem</h2>
+                    </section>
+                    <form action="" name="busca__hoteis" id="busca__hoteis" method="post">
+                        <div class="campo__tipos">
+                            <section class="tipo">
+                                <input type="radio" name="tipo__viagem" id="turismo" value="1" required>
+                                <label for="turismo"><i class="fas fa-umbrella-beach"></i> Turismo</label>
+                            </section>
+                            <section class="tipo">
+                                <input type="radio" name="tipo__viagem" id="trabalho" value="2" required>
+                                <label for="trabalho"><i class="fas fa-briefcase"></i> Trabalho</label>
+                            </section>
+                        </div>
+                        <div class="campos">
+                            <section class="campo">
+                                <label for="destino">Destino</label>
+                                <input type="search" id="destino" required>
+                            </section>
+                            <section class="campo">
+                                <label for="entrada">Entrada</label>
+                                <input type="date" id="entrada" required>
+                            </section>
+                            <section class="campo">
+                                <label for="saida">Saída</label>
+                                <input type="date" id="saida" required>
+                            </section>
+                            <section class="campo">
+                                <label for="pessoas">Pessoas</label>
+                                <input type="number" id="pessoas" required min="1">
+                            </section>
+                            <section class="campo">
+                                <label for="quartos">Quartos</label>
+                                <input type="number" id="quartos" required min="1">
+                            </section>
+                            <section class="campo">
+                                <input type="button" value="Buscar">
+                            </section>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+
+        <div class="container__hoteis">
+            <a href="#"  class="box__hoteis">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/ibis-styles-sao-paulo-full.jpg" type="image/jpg">
+                    <img src="images/ibis-styles-sao-paulo-300.jpg" alt="Foto de uma suíte do hotel IBIS Styles São Paulo Anhembi">
+                </picture>
+                
+                <div class="titulo__hoteis">
+                    <h3>IBIS Styles São Paulo Anhembi</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O hotel fica a 1,2 km do Pavilhão de Exposições do Anhembi, a 2,4 km do Expo Center Norte e a 15 km do Aeroporto de Congonhas. Já o Aeroporto Internacional de Guarulhos fica a 23 km da propriedade.
+                </p>       
+                
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/confort-ibirapuera-full.jpg" type="image/jpg">
+                    <img src="images/confort-ibirapuera-300.jpg" alt="Foto de uma suíte do hotel Confort Ibirapuera">
+                </picture>
+                
+
+                <div>
+                    <h3 class ="titulo__hoteis">Confort Ibirapuera</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>'
+                </div>
+
+                <p class="texto__hoteis">
+                    O Comfort Ibirapuera fica a apenas 5 minutos de carro do Shopping Ibirapuera e a 9 km do São Paulo Expo. Você também estará a uma curta caminhada de diversos restaurantes, lojas e cafés elegantes.
+                </p>       
+                
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-morumbi-full.jpg" type="image/jpg">
+                    <img src="images/blue-tree-premium-morumbi-300.jpg" alt="Foto de uma suíte do hotel Blue Tree Premium Morumbi">
+                </picture>
+                
+                <div>
+                    <h3 class ="titulo__hoteis">Blue Tree Premium Morumbi</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos de carro do São Paulo Expo (centro de convenções). O Consulado dos EUA está situado a 1,4 km do hotel.
+                </p>       
+                
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/mercure-sao-paulo-pamplona-full.jpg" type="image/jpg">
+                    <img src="images/mercure-sao-paulo-pamplona-300.jpg" alt="Foto de uma suíte do hotel Mercure São Paulo Pamplona">
+                </picture>
+
+                <div>
+                    <h3 class ="titulo__hoteis">Mercure São Paulo Pamplona</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    Com uma localização ideal no bairro Jardins, em São Paulo, o Mercure São Paulo Pamplona fica ao lado da Avenida 9 de Julho e a 800 metros da Avenida Paulista.
+                </p>
+
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/sheraton-sao-paulo-wtc-hotel-full.jpg" type="image/jpg">
+                    <img src="images/sheraton-sao-paulo-wtc-hotel-300.jpg" alt="Foto de uma suíte do hotel Sheraton São Paulo WTC Hotel">
+                </picture>                
+
+                <div>
+                    <h3 class="titulo__hoteis">Sheraton São Paulo WTC Hotel</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star-half preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O Sheraton WTC Hotel está situado no bairro do Brooklin, em São Paulo, ao lado do Shopping D&D e a 5,5 km do Estádio do Morumbi.
+                </p>
+
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/bourbon-convention-ibirapuera-full.jpg" type="image/jpg">
+                    <img src="images/bourbon-convention-ibirapuera-300.jpg" alt="Foto de uma suíte do hotel Bourbon Convention Ibirapuera">
+                </picture>
+                
+                <div>
+                    <h3 class="titulo__hoteis">Bourbon Convention Ibirapuera</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    A propriedade fica ao lado do Shopping Ibirapuera, a apenas 2 km do Parque Ibirapuera, a 3 km do Aeroporto de Congonhas.
+                </p>
+
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-paulista-full.jpg" type="image/jpg">
+                    <img src="images/blue-tree-premium-paulista-300.jpg" alt="Foto de uma suíte do hotel Blue Tree Premium Paulista">
+                </picture>
+
+                <div>
+                    <h3 class="titulo__hoteis">Blue Tree Premium Paulista</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star-half preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O Blue Tree Paulista está situado a 270 metros do MASP. O Parque do Ibirapuera fica a apenas 3,8 km da propriedade, enquanto o Aeroporto de Congonhas está a 8,8 km de distância.
+                </p>       
+                
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/golden-tulip-paulista-plaza-full.jpg" type="image/jpg">
+                    <img src="images/golden-tulip-paulista-plaza-300.jpg" alt="Foto de uma suíte do hotel Golden Tulip Paulista Plaza">
+                </picture>
+                
+                <div>
+                    <h3 class ="titulo__hoteis">Golden Tulip Paulista Plaza</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star nao__preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O Hotel Golden Tulip Paulista Plaza está localizado no Bairro Jardins, a 300 m da Avenida Paulista, a 500 m da estação de metrô Brigadeiro e a 400 m do Shopping Pátio Paulista.
+                </p>
+
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+
+            <a href="#" class="box__hoteis">
+                
+                <picture>
+                    <source media="(max-width: 850px)" srcset="./images/renaissance-sao-paulo-hotel-full.jpg" type="image/jpg">
+                    <img src="images/renaissance-sao-paulo-hotel-300.jpg" alt="Foto de uma suíte do hotel Renaissance São Paulo Hotel">
+                </picture>
+                
+                <div>
+                    <h3 class="titulo__hoteis">Renaissance São Paulo Hotel</h3>
+                </div>
+
+                <div class="estrelas">
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                    <i class="fas fa-star preenchida"></i>
+                </div>
+
+                <p class="texto__hoteis">
+                    O Parque do Ibirapuera está situado a 2 km do Renaissance São Paulo, enquanto o Aeroporto de Congonhas fica a 10 km. O Aeroporto Internacional de Guarulhos está localizado a 30 km do hotel.
+                </p>
+
+                <div class="botao__detalhes">Mais detalhes</div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <section class="titulo__rodape">
+            <h3>Contato</h3>
+        </section>
+
+        <div class="container__contato">
+            <ul class="redes">
+                <li><a href="#"><i class="fab fa-facebook redes__sociais"></i></a></li>
+                <sectiona href="#"><i class="fab fa-twitter redes__sociais"></i></sectiona></li>
+                <li><a  class="titulo__hoteis"href="#"><i class="fab fa-instagram redes__sociais"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest redes__sociais"></i></a></li>
+            </ul>
+            <ul class="redes contato">
+                <li><address class="redes__sociais"><i class="fas fa-phone-alt"></i> 91234-5678</address></li>
+                <li><address href="#" class="redes__sociais"><i class="fas fa-envelope"></i> traveller@email.com</address></li>
+            </ul>
+        </div>
+        
+        <form action="ofertas" name="ofertas" id="ofertas" method="post">
+            <p>Quer receber ofertas de viagens em seu email?</p>
+            <input type="email" name="email" id="email" placeholder="Seu email">
+            <input type="submit" value="Inscreva-se" class="botao">
+        </form>
+
+        <p class="direitos">
+            Direitos reservados - Traveller
+        </p>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

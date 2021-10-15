@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+.cabecalho{
+    height: 10vh;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #128172;
+}
+h1{
+    background-image: url(../images/airplane-around-earth.png);
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 2.1rem;
+    width: 13vw;
+    font-size: 1.7rem;
+    color: #fff;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    background-color: #666;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 30px 10px;
+}
+.menu a:hover{
+    color: #000;
+}
+.sessoes{
+    list-style: none;
+    max-height: 25vh;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    padding-top: 0.5rem;
+}
+.sessoes::-webkit-scrollbar{
+    text-align:center;
+    border-radius: 20px;
+    border: 1px solid #128172;
+    background-image: linear-gradient(to right, #ddd, #128172a9);
+}
+.sessoes::-webkit-scrollbar-thumb{
+    background-color: #128172;
+    border-radius: 20px;
+    box-shadow: 0 0 3px  #000;
+}  
+.box{
+    min-width: 15vw;
+    min-height: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.box a{
+    color: #666;
+    text-decoration: none;
+}
+.box:hover{
+    background-color: #ddd;
+    font-size: 0.95rem;
+    font-weight: 900;
+}
+.selecionado{
+    box-shadow:01px -1px 7px #128172;
+    border: 1px solid #128172a9;
+    font-size: 0.95rem;
+    font-weight: 900;
+}
+.container__banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fundo{
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+.campo__tipos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tipo{
+    background-color: #128172;
+    color: #fff;
+    border-radius: 5px;
+    width: 25vw;
+    margin: 0 1rem;
+    text-align: center;
+}
+.tipo:hover, input[type="button"]:hover, .botao__detalhes:hover, .botao:hover{
+    background-color: #128172a9;
+    background-image: none;
+    color: #000;
+}
+input[type="radio"]{
+    display: none;
+}
+.tipo label{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+.campos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.campo{
+    width: 30%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+}
+.campo label{
+    font-size: 1.3rem;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 2rem;
+}
+input:focus{
+    outline: 2px solid #128172;
+}
+#destino{
+    background-image: url(../images/black-placeholder-variant.png);
+}
+#entrada{
+    background-image: url(../images/log-in.png);
+}
+#saida{
+    background-image: url(../images/exit.png);
+}
+#quartos{
+    background-image: url(../images/bed.png);
+}
+#pessoas{
+    background-image: url(../images/person-silhouette.png);
+}
+input[type="button"]{
+    background-image: url(../images/loupe.png);
+    height: 2.2rem;
+    color: #fff;
+    background-color: #128172;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#destino, #entrada, #saida, #quartos, #pessoas, #email, input[type="button"]{
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.container__hoteis{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box__hoteis{
+    width: 30%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #128172;
+    border-radius: 10px 30px;
+    background-color: #ccc;
+    text-decoration: none;
+}
+.texto__hoteis{
+    margin: 0 0.5rem 1rem;
+    color: #333;
+}
+img{
+    max-width: 100%;
+}
+.titulo__hoteis{
+    font-size: 1.3rem;
+    margin: 0.5rem 0 1rem;
+    color: #333;
+}
+a:focus{
+    outline: 2px solid #128172;
+}
+.estrelas{
+    margin-bottom: 1rem;
+}
+.preenchida{
+    color: #ffd700;
+}
+.nao__preenchida{
+    color: #666;
+}
+.botao__detalhes{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #128172;
+    text-align: center;
+    height: auto;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+footer{
+    background-color: #128172;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+}
+.container__contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.redes__sociais{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-style: normal;
+}
+.redes__sociais:hover{
+    color: #000;
+}
+.direitos, #ofertas{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+#ofertas{
+    background-color: #ccc;
+    border-radius: 10px 30px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+#email{
+    background-image: url(../images/new-email.png);
+}
+.botao{
+    color: #fff;
+    border-radius: 5px;
+    height: 2.3rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    background-color: #128172;
+    padding: 5px;
+}
+
+@media(max-width:850px){
+    .box{
+        min-width: 20vw;
+    }
+    .container__hoteis{
+        flex-direction: column;
+    }
+    .box__hoteis{
+        width: 100%;
+    }
+    input[type="button"]{
+        background-image: none;
+    }
+}
+@media(max-width:600px) {
+    .linha {
+        width: 1.7rem;
+        height: 0.2rem;
+        background: #fff;
+        margin: 0.3rem;
+    }
+    .header__menu {
+        position: relative;
+    }
+    .hamburguer {
+        position: absolute;
+        right: 0;
+        top: -15px;
+        cursor: pointer;
+    }
+    .menu {
+        width: 50vw;
+        min-height: 20vh;
+        background-color: #128172a9;
+        position: fixed;
+        right: -100vw;
+        top: 9vh;
+        z-index: 2;
+        transition: 0.2s;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .menu.open {
+        right: 0vw;
+    }
+    .menu a{
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+    .menu a:hover{
+        color: #000;
+    }
+    .box{
+        min-width: 33vw;
+    }
+    .container{
+        width: 100%;
+    }
+    .contato{
+        flex-direction: column;
+        align-items: center;
+    }
+    #ofertas{
+        width: 95%;
+    }
+    #ofertas input{
+        width: 40%;
+    }
+    #ofertas p{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media(max-width:370px){
+    .menu{
+        height: 25vh;
+        width: 60vw;
+    }
+    .box{
+        min-width: 40vw;
+    }
+    .tipo{
+        width: 35vw;
+    }
+}
