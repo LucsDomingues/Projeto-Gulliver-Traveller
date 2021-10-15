@@ -11,6 +11,7 @@ html{
 h1, h2, h3{
     font-family: 'Roboto', sans-serif;
 }
+/* cabeçalho */
 .cabecalho{
     height: 10vh;
     padding: 0 10px;
@@ -46,6 +47,7 @@ h1{
 .menu a:hover{
     color: #000;
 }
+/* sessão de cenários */
 .sessoes{
     list-style: none;
     max-height: 25vh;
@@ -54,6 +56,7 @@ h1{
     overflow-x: auto;
     padding-top: 0.5rem;
 }
+/* barra scroll */
 .sessoes::-webkit-scrollbar{
     text-align:center;
     border-radius: 20px;
@@ -66,7 +69,7 @@ h1{
     box-shadow: 0 0 3px  #000;
 }  
 .box{
-    min-width: 15vw;
+    min-width: 20vw;
     min-height: 2vh;
     display: flex;
     flex-direction: column;
@@ -88,6 +91,7 @@ h1{
     font-size: 0.95rem;
     font-weight: 900;
 }
+/* banner */
 .container__banner{
     width: 100%;
     height: 100vh;
@@ -115,6 +119,7 @@ h1{
     font-size: 2.5rem;
     margin: 1.5rem;
 }
+/* campos */
 .campo__tipos{
     width: 100%;
     display: flex;
@@ -197,6 +202,7 @@ input[type="button"]{
     background-repeat: no-repeat;
     background-position: 10px center;
 }
+/* hoteis */
 .container__hoteis{
     width: 100%;
     margin: 2rem 0;
@@ -216,7 +222,7 @@ input[type="button"]{
     align-items: center;
     border: 2px solid #128172;
     border-radius: 10px 30px;
-    background-color: #ccc;
+    background-color: #eee;
     text-decoration: none;
 }
 .texto__hoteis{
@@ -254,6 +260,35 @@ a:focus{
     margin-bottom: 0.5rem;
     text-decoration: none;
 }
+/* ordem decrescente e em ordem afabetica */
+.um{
+    order: 0;
+}
+.dois{
+    order: 1;
+}
+.tres{
+    order: 2;
+}
+.quatro{
+    order: 3;
+}
+.cinco{
+    order: 4;
+}
+.seis{
+    order: 5;
+}
+.sete{
+    order: 6;
+}
+.oito{
+    order:7;
+}
+.nove{
+    order: 8;
+}
+/* rodapé */
 footer{
     background-color: #128172;
     font-size: 2rem;
@@ -285,6 +320,7 @@ footer{
     margin-top: 1rem;
     font-size: 1.4rem;
 }
+/* campo de cadastrar email */
 #ofertas{
     background-color: #ccc;
     border-radius: 10px 30px;
@@ -304,7 +340,7 @@ footer{
     background-color: #128172;
     padding: 5px;
 }
-
+/* telas com máximo de 850px */
 @media(max-width:850px){
     .box{
         min-width: 20vw;
@@ -319,6 +355,7 @@ footer{
         background-image: none;
     }
 }
+/* telas com máximo de 600px */
 @media(max-width:600px) {
     .linha {
         width: 1.7rem;
@@ -379,6 +416,7 @@ footer{
         margin-bottom: 0.5rem;
     }
 }
+/* telas com máximo de 370px */
 @media(max-width:370px){
     .menu{
         height: 25vh;
@@ -389,5 +427,11 @@ footer{
     }
     .tipo{
         width: 35vw;
+    }
+    .campo{
+        width: 45%;
+    }
+    .direitos{
+        font-size: 1.3rem;
     }
 }
