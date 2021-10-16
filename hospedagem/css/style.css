@@ -8,6 +8,9 @@ html{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+*::selection{
+    background-color: #128172;
+}
 h1, h2, h3{
     font-family: 'Roboto', sans-serif;
 }
@@ -215,15 +218,17 @@ input[type="button"]{
 .box__hoteis{
     width: 30%;
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     border: 2px solid #128172;
     border-radius: 10px 30px;
     background-color: #eee;
     text-decoration: none;
+    cursor: pointer;
 }
 .texto__hoteis{
     margin: 0 0.5rem 1rem;
@@ -249,6 +254,14 @@ a:focus{
 .nao__preenchida{
     color: #666;
 }
+.link__hoteis{
+    margin-bottom: 1.5rem;
+}
+.link__hoteis a{
+    text-decoration: none;
+    color: #128172;
+    font-size: 1.2rem;
+}
 .botao__detalhes{
     padding: 10px 15px;
     box-sizing: border-box;
@@ -257,7 +270,6 @@ a:focus{
     background-color: #128172;
     text-align: center;
     height: auto;
-    margin-bottom: 0.5rem;
     text-decoration: none;
 }
 /* ordem decrescente e em ordem afabetica */
@@ -312,7 +324,7 @@ footer{
     margin: 1rem;
     font-style: normal;
 }
-.redes__sociais:hover{
+.redes__sociais:hover, .link__hoteis:hover{
     color: #000;
 }
 .direitos, #ofertas{
