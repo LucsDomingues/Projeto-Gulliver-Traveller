@@ -397,7 +397,7 @@ footer{
         cursor: pointer;
     }
     .menu {
-        width: 55vw;
+        width: 70vw;
         height: 25vh;
         background-color: #128172a9;
         position: fixed;
@@ -435,9 +435,6 @@ footer{
 }
 /* telas com máximo de 370px */
 @media(max-width:370px){
-    .menu{
-        width: 70vw;
-    }
     .box{
         min-width: 40vw;
     }
