@@ -369,6 +369,18 @@ footer{
 }
 /* telas com máximo de 600px */
 @media(max-width:600px) {
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    .sessoes{
+        background-color: #fff;
+    }
+    .container__banner{
+        margin-top: 20vh;
+    }
     .linha {
         width: 1.7rem;
         height: 0.2rem;
@@ -386,11 +398,11 @@ footer{
     }
     .menu {
         width: 50vw;
-        min-height: 20vh;
+        height: 25vh;
         background-color: #128172a9;
         position: fixed;
         right: -100vw;
-        top: 9vh;
+        top: 10vh;
         z-index: 2;
         transition: 0.2s;
         flex-direction: column;
@@ -399,13 +411,6 @@ footer{
     }
     .menu.open {
         right: 0vw;
-    }
-    .menu a{
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-    }
-    .menu a:hover{
-        color: #000;
     }
     .box{
         min-width: 33vw;
@@ -431,8 +436,7 @@ footer{
 /* telas com máximo de 370px */
 @media(max-width:370px){
     .menu{
-        height: 25vh;
-        width: 60vw;
+        width: 70vw;
     }
     .box{
         min-width: 40vw;
