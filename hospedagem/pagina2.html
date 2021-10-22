@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br" class="padrao">
+<html lang="pt-Br" class="acessivel">
 
 <head>
     <title>Traveller - Hospedagem</title>
@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="shortcut icon" href="images/airplane-around-earth (1).png" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <article class="cabecalho">
             <section>
-                <h1><a href="index.html"> TRAVELLER</a></h1>
+                <h1><a href="pagina2.html"><span class="laranja">TRAV</span>ELLER</a></h1>
             </section>
 
             <nav class="header__menu">
@@ -24,7 +24,8 @@
                     <li><a href="#"><i class="fas fa-question-circle"></i> Ajuda</a></li>
                     <li><a href="#"><i class="fas fa-suitcase-rolling"></i> Minhas Viagens</a></li>
                     <li><a href="#"><i class="fas fa-user"></i> Entrar</a></li>
-                    <li><a href="pagina2.html"><i class="fas fa-universal-access"></i> Acessibilidade</a></li>
+                    <li><a href="index.html"><i class="fas fa-universal-access"></i> Site Padrão</a></li>
+
                 </ul>
                 <div class="hamburguer">
                     <div class="linha"></div>
@@ -50,7 +51,7 @@
                     </li>
                 </a>
 
-                <a style="color: #128172;" href="index.html" rel="next" class="link__box">
+                <a style="color: #E07D00 ;" href="pagina2.html" rel="next" class="link__box">
                     <li class="box selecionado">
                         <i class="fas fa-hotel"></i>
                         Hospedagem
@@ -114,7 +115,7 @@
             <div class="fundo">
                 <article class="container">
                     <section>
-                        <h2 class="titulo__container">Hospedagem</h2>
+                        <h2 class="titulo__container">HOSPE<span class="laranja">DAGEM</span></h2>
                     </section>
                     
                     <form action="" name="busca__hoteis" id="busca__hoteis" method="post">
@@ -132,32 +133,33 @@
 
                         <article class="campos">
                             <section class="campo">
-                                <label for="destino">Destino</label>
+                                <label for="destino">Destino?</label>
                                 <input type="search" id="destino" required>
                             </section>
 
                             <section class="campo">
-                                <label for="entrada">Entrada</label>
+                                <label for="entrada"> Data de Entrada</label>
                                 <input type="date" id="entrada" required>
                             </section>
 
                             <section class="campo">
-                                <label for="saida">Saída</label>
+                                <label for="saida">Data de Saída</label>
                                 <input type="date" id="saida" required>
                             </section>
 
                             <section class="campo">
-                                <label for="pessoas">Pessoas</label>
+                                <label for="pessoas">Nº de Pessoas</label>
                                 <input type="number" id="pessoas" required min="1">
                             </section>
 
                             <section class="campo">
-                                <label for="quartos">Quartos</label>
+                                <label for="quartos"> Nº de dormitórios</label>
                                 <input type="number" id="quartos" required min="1">
                             </section>
 
                             <section class="campo">
-                                <input type="button" value="Buscar" class="busca">
+                                <label for="search"> Clique para pesquisar</label>
+                                <input type="button" value="Buscar" class="busca" id="search">
                             </section>
                         </article>
                     </form>
@@ -539,14 +541,14 @@
 
         <address class="container__contato">
             <ul class="redes">
-                <li><a href="#"><i class="fab fa-facebook redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest redes__sociais"></i></a></li>
+                <li><a href="#" class="redes__sociais"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#" class="redes__sociais"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" class="redes__sociais"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#" class="redes__sociais"><i class="fab fa-pinterest"></i> Pinterest</a></li>
             </ul>
             <ul class="redes contato">
-                <li><p class="redes__sociais"><i class="fas fa-phone-alt"></i> 91234-5678</p></li>
-                <li><a href="#" class="redes__sociais"><i class="fas fa-envelope"></i> traveller@email.com</a></li>
+                <li><p class="redes__sociais"><i class="fas fa-phone-alt"></i> Tel: 11 91234-5678</p></li>
+                <li><a href="#" class="redes__sociais"><i class="fas fa-envelope"></i> E-mail: traveller@email.com</a></li>
             </ul>
         </section>
 
